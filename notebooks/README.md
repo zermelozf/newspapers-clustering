@@ -14,9 +14,10 @@ group by  thread.site
 ```SQL
 %spark.sql
 
-select thread.site, count(1) as num_articles
+select concat(first(month(crawled)), ", ", first(year(crawled))), count(1) as num_articles
 from news
-group by  thread.site
+group by  year(to_date(crawled)), month(to_date(crawled))
+order by  year(to_date(crawled)), month(to_date(crawled))
 ```
 
 ## Number of articles per domain per month
