@@ -46,6 +46,9 @@ sudo apt-get install oracle-java8-installer
 
 ./bin/spark-shell --driver-memory 6G --master local[2]
 ```
+Using bin/spark-shell
+
+```scala
 // Check all files can be loaded
 val testJsonData = spark.read.json("/home/ubuntu/monthly/2725_webhose-2016-05_20170610012555/2725_webhose-2016-05_20170610012555.json.gz")
 testJsonData.show(10)
