@@ -1,0 +1,5 @@
+.envrc
+.ipynb*
+__pycache__
+.vscode
+data/
