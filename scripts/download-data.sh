@@ -7,9 +7,9 @@
 
 # 2. Run:
 #    ./scripts/download-data.sh     Downloads stratified sampled JSON file
-#    ./scripts/download-data.sh  "s3://newsclustering/stratified-sample/webhose-monthly-gz/"    Downloads all JSON gzipped data
+#    ./scripts/download-data.sh  "s3://newsclustering/stratified-sample"    Downloads all JSON gzipped data
 
-ARG1=${1:-'s3://newsclustering/stratified-sample/'}
+ARG1=${1:-'s3://newsclustering/stratified-sample'}
 
 # Download the data from S3
 mkdir -p ./data/source
