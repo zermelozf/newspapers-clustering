@@ -1,8 +1,8 @@
 
-from enum import Enum
+from enum import IntEnum
 
 
-class Bias(Enum):
+class Bias(IntEnum):
     EXTREME_LEFT = 1
     LEFT = 2
     LEFT_CENTER = 3
