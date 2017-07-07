@@ -1,15 +1,15 @@
 
-from enum import IntEnum
+from enum import Enum
 
 
-class Bias(IntEnum):
-    EXTREME_LEFT = 1
-    LEFT = 2
-    LEFT_CENTER = 3
-    LEAST_BIASED = 4
-    RIGHT_CENTER = 5
-    RIGHT = 6
-    EXTREME_RIGHT = 7
+class Bias(Enum):
+    EXTREME_LEFT = 0
+    LEFT = 1
+    LEFT_CENTER = 2
+    LEAST_BIASED = 3
+    RIGHT_CENTER = 4
+    RIGHT = 5
+    EXTREME_RIGHT = 6
 
     @staticmethod
     def get_bias_for_domain(domain):
