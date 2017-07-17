@@ -1,6 +1,15 @@
 
 from enum import Enum
 
+class SimplifiedBias(Enum):
+    LEFT = 0
+    UNBIASED = 1
+    RIGHT = 2
+    
+    @staticmethod
+    def get_simplified_bias_for_domain(domain):
+        return bias_to_simplified_bias[Bias.get_bias_for_domain(domain)]
+    
 
 class Bias(Enum):
     EXTREME_LEFT = 0
@@ -15,9 +24,18 @@ class Bias(Enum):
     def get_bias_for_domain(domain):
         return bias_by_domain[domain]
 
+bias_to_simplified_bias = {
+    Bias.EXTREME_LEFT : SimplifiedBias.LEFT,
+    Bias.LEFT : SimplifiedBias.LEFT,
+    Bias.LEFT_CENTER : SimplifiedBias.UNBIASED,
+    Bias.LEAST_BIASED : SimplifiedBias.UNBIASED,
+    Bias.RIGHT_CENTER : SimplifiedBias.UNBIASED,
+    Bias.RIGHT : SimplifiedBias.RIGHT,
+    Bias.EXTREME_RIGHT : SimplifiedBias.RIGHT
+}
 
 bias_by_domain = {
-    'dailykos.com': Bias.LEFT,
+    'dailykos.com': Bias.EXTREME_LEFT,
     'talkingpointsmemo.com': Bias.LEFT,
     'politicususa.com': Bias.LEFT,
     'thenation.com': Bias.LEFT,
