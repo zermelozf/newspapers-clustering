@@ -21,6 +21,7 @@ pip install -U spacy
 pip install plotly
 pip install matplotlib
 pip install pandas
+pip install scipy
 ```
 
 Once the packages have been installed, you can launch the notebook interface using `jupyter notebook` and navigate to the `python-script` directory.
