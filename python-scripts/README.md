@@ -15,9 +15,12 @@ Download https://console.aws.amazon.com/s3/object/newsclustering/filtered-csv/ne
 ### Packages required for `Report.ipynb`
 
 ```shell
+pip install jupyter
 pip install scikit-learn
 pip install -U spacy
-pip install plotly 
+pip install plotly
+pip install matplotlib
+pip install pandas
 ```
 
 Once the packages have been installed, you can launch the notebook interface using `jupyter notebook` and navigate to the `python-script` directory.
