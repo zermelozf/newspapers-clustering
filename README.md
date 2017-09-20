@@ -41,18 +41,17 @@ pip install plotly
 pip install matplotlib
 pip install pandas
 pip install scipy
+pip install seaborn
 pip install imbalanced-learn
 
 python -m spacy download en
 ```
 
-Once the packages have been installed, you can launch the notebook interface using `jupyter notebook` and navigate to the `python-script` directory.
+Once the packages have been installed, you can launch the notebook interface using `jupyter notebook`. Then navigate to the `jupyter-notebooks` directory and open any notebook by clicking on it.
 
-### Additional packages required for `linear-model-doc2vec.ipynb, nn-classifer-xyz.ipynb`
+### Additional packages required for `nn-classifer-keras-title.ipynb`
 
 ```shell
 pip install --upgrade tensorflow
 pip install keras
 ```
-
-For pytorch, please see install instructions: http://pytorch.org/
