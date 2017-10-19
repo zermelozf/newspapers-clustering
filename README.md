@@ -1,6 +1,7 @@
 # Newspaper bias analysis
 
-This is the code that served as basis for the blogpost [TODO Link](https://example.com).
+This is the code that served as basis for the blogpost [Predicting Political Bias with Python](https://medium.com/linalgo/predict-political-bias-using-python-b8575eedef13).
+The data required to run the notebooks/scripts is available on request.
 
 ## Data exploration & sampling
 
