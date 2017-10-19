@@ -29,7 +29,6 @@ On linux or Mac OS, simply run after activating your environment: `pip install j
 
 #### Download the training & test data (a sample of the whole dataset with about ~100K articles)
 
-TODO: update public link.
 Download https://console.aws.amazon.com/s3/object/newsclustering/filtered-csv/newsclust.csv?region=us-east-1&tab=overview and place the CSV file under data/source/newsclust.csv
 
 ### Packages required for `Report.ipynb`
